@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      <div class="table table-hover mt-5">
+        <thead class="table-warning">
+          <th>No</th>
+          <th>Ad Soyad</th>
+          <th>E-posta</th>
+          <th></th>
+        </thead>
+        <tbody class="table-secondary">
+          <tr class="h5" *ngFor="let ogrenci of ogrenciler">
+              <td>{{ogrenci.no}}</td>
+              <td>{{ogrenci.adsoyad}}</td>
+              <td>{{ogrenci.mail}}</td>
+              <td><button class="btn btn-warning">Ödev ver</button></td>
+          </tr>
+        </tbody>
+      </div>
+    </div>
+  </div>
+</div>
